@@ -5,12 +5,18 @@
     <title>BooKart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
 </head>
-<body ng-init="numOfBooks = 10">
-
-    Number of Books: <input ng-model="numOfBooks"/>
-    <p>Welcome to BooKart! We have a collection of {{numOfBooks + ' million'}} books.</p>
-
+<body>
+    <div id="header-wrapper">
+        <span class="logo pull-left">BooKart</span>
+        <span class="tagline pull-left">We have 1 million books for you</span>
+        <div class=nav-wrapper pull-left>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">Books</a></li>
+                <li><a href="#">Kart</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
